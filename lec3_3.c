@@ -2,8 +2,8 @@
 
 int main()
 {
-    int sum = 0;
-    int input;
+    float sum = 0;
+    float input;
     int num_scores;
     int i;
 
@@ -12,11 +12,11 @@ int main()
 
     for (i = 0; i < num_scores; i++)
     {
-        scanf("%d", &input);
+        scanf("%f", &input);
         sum += input;
     }
     
-    printf("Average score is %d\n", sum/num_scores);
+    printf("Average score is %f\n", (sum/num_scores)*1.0);
     
     return 0;
 }
